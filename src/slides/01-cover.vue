@@ -61,7 +61,7 @@
     </div>
 
     <div class="meta-strip">
-      <span>26 SLIDES</span>
+      <span>25 SLIDES</span>
       <span class="dot">·</span>
       <span>3 PARTS</span>
       <span class="dot">·</span>

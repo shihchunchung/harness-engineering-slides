@@ -25,7 +25,6 @@ import Slide23 from './slides/23-p3-s1-spec-explorer.vue'
 import Slide24 from './slides/24-p3-s2-brief.vue'
 import Slide25 from './slides/25-p3-s3-domain.vue'
 import Slide26 from './slides/26-decision-log.vue'
-import Slide27 from './slides/27-finale.vue'
 
 export type DotState = 'done' | 'cur' | 'todo'
 
@@ -300,13 +299,6 @@ export const slides: SlideMeta[] = [
     eyebrow: '橫切議題',
     heading: '決策日誌與 observability',
     footerLabel: '橫切議題',
-  },
-  {
-    id: '27',
-    title: '回顧與結語',
-    group: '結尾',
-    component: Slide27,
-    bare: true,
   },
 ]
 
