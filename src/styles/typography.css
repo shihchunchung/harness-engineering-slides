@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600;700&display=swap');
+
+body {
+  font-family:
+    'IBM Plex Sans',
+    'Noto Sans TC',
+    -apple-system,
+    BlinkMacSystemFont,
+    'PingFang TC',
+    'Microsoft JhengHei',
+    'Helvetica Neue',
+    Arial,
+    sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 400;
+  letter-spacing: 0.005em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 500;
+  line-height: 1.25;
+  margin: 0;
+  color: var(--text);
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  font-size: 38px;
+}
+h2 {
+  font-size: 22px;
+}
+h3 {
+  font-size: 17px;
+  font-weight: 500;
+}
+h4 {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+p {
+  margin: 0 0 0.85em;
+  color: var(--text);
+}
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin: 0 0 0.6em;
+  padding-left: 1.4em;
+}
+li {
+  margin-bottom: 0.3em;
+  color: var(--text);
+}
+li:last-child {
+  margin-bottom: 0;
+}
+li > ul,
+li > ol {
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+
+strong,
+b {
+  font-weight: 600;
+  color: var(--text);
+}
+
+em {
+  font-style: normal;
+  color: var(--accent);
+}
+
+pre {
+  background: var(--bg-inset);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  overflow-x: auto;
+  line-height: 1.55;
+}
+
+pre code {
+  background: transparent;
+  border: 0;
+  padding: 0;
+}
+
+.mono {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+}

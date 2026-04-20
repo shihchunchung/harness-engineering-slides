@@ -1,0 +1,120 @@
+:root {
+  color-scheme: dark;
+
+  /* Surfaces */
+  --bg: #0a0a0c;
+  --bg-elevated: #111114;
+  --bg-inset: #0e0e11;
+
+  /* Text */
+  --text: #e8e4dc;         /* warm white */
+  --text-muted: #8a867d;   /* warm muted */
+  --text-subtle: #6b6860;
+  --text-dim: #5a5750;
+
+  /* Lines / borders */
+  --border: #1d1d21;
+  --border-strong: #2e2e32;
+  --divider: #3d3a34;      /* warm second neutral */
+
+  /* Accent — Terracotta */
+  --accent: #d47857;
+  --accent-dim: #7a4430;
+  --accent-soft: rgba(212, 120, 87, 0.14);
+
+  /* Diff semantics (built on accent + neutrals, not rainbow) */
+  --added: var(--accent);
+  --added-border: var(--accent);
+  --added-bg: var(--accent-soft);
+
+  --changed: var(--text);
+  --changed-border: var(--divider);
+  --changed-bg: transparent;
+
+  --removed: var(--text-dim);
+  --removed-border: var(--border-strong);
+  --removed-bg: transparent;
+
+  /* Radii */
+  --radius: 3px;
+  --radius-lg: 6px;
+
+  /* Slide metrics */
+  --slide-max-w: 1400px;
+  --slide-pad-x: 72px;
+  --slide-pad-y: 56px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000;
+  color: var(--text);
+  overflow: hidden;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+code,
+pre,
+kbd {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.88em;
+}
+
+code {
+  background: var(--bg-inset);
+  padding: 1px 6px;
+  border-radius: 3px;
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+kbd {
+  display: inline-block;
+  padding: 1px 6px;
+  border: 1px solid var(--border-strong);
+  border-bottom-width: 2px;
+  border-radius: 4px;
+  background: var(--bg-inset);
+  color: var(--text);
+  font-size: 0.82em;
+  line-height: 1.4;
+}
+
+/* On desktop, the App-level .pipeline-mount renders the sticky pipeline
+   overlay. The inline version inside each slide's .col-left is kept as a
+   fallback for narrow viewports, where the sticky overlay is hidden. */
+@media (min-width: 1101px) {
+  .inline-pipeline {
+    display: none;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--divider);
+}
