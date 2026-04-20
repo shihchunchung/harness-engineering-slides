@@ -162,9 +162,8 @@
 }
 
 .title-rule {
-  width: 96px;
-  height: 1px;
-  background: var(--divider);
+  height: 2px;
+  background: linear-gradient(to right, var(--accent), var(--divider) 30%, transparent);
   margin: 28px 0 22px;
 }
 

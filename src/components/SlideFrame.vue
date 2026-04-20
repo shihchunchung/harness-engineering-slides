@@ -154,9 +154,8 @@ const displayHeading = computed(() => props.heading ?? props.title)
 }
 
 .title-rule {
-  width: 80px;
-  height: 1px;
-  background: var(--divider);
+  height: 2px;
+  background: linear-gradient(to right, var(--accent), var(--divider) 30%, transparent);
   margin: 16px 0 0;
 }
 
